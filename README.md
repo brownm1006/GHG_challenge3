@@ -17,7 +17,7 @@ This repository containt a Python project needed to validate minimal knowledge o
 
 ## Features
 
-Since the owner did not have enougth time to implement the PostGis Rest API requerements. The following Api call were created as a way to apply lessons learned regarding Python understanding ([Base on Naazneen Jatu document](https://stackabuse.com/creating-a-rest-api-in-python-with-django)). The following is the available API:
+Since the owner did not have enougth time to implement the PostGis Rest API requerements. The following Api call were created as a way to apply lessons learned regarding Python understanding ([Base on Naazneen Jatu document](https://stackabuse.com/creating-a-rest-api-in-python-with-django)). Errors management was not part of Naazneen document and was added. The following is the available API:
 
 * GET : Get the content of the shopping cart in Json. Call http://127.0.0.1:8000/cart-items/
 
