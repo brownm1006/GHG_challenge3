@@ -4,7 +4,7 @@
 
 The main purpose of this project is to ramp up the owner of this codes with knowledge of Python and to understand core business rules of GHG Sat before 3-4 days starting monday the 31 at 19:00. To do so GHG Sat have sent the [Observation Management](#Challenge3:-Observation-Management) challenge. 
 
-This repository containt a Python project needed to validate minimal knowledge of Python by implemeting basic Rest Api call used to interact with a Shopping cart. 
+This repository containt a Python project needed to validate minimal knowledge of Python by implemeting basic Rest Api call used to interact with a Shopping cart. The Shopping cart is used for validate the Django feachures.    
 
 ## Requirement
 
@@ -35,20 +35,20 @@ In addition provide the following:
 
 ## Features
 
-The following Api call are avaiable:
+Since the owner did not have enougth time to implement the PostGis Rest API requerements. The following Api call were created as a way of proving Python understanding. The following is the available API:
 
 * GET : Get the content of the shopping cart in Json. Call http://127.0.0.1:8000/cart-items/
 
 * POST : Insert a cart in the database. Call http://127.0.0.1:8000/cart-items/. Json values posted {"product_name":"name","product_price":"41","product_quantity":"1"}
 
-* PATCH : Update the cart item 1. Call http://127.0.0.1:8000/update-item/1 . Json values posted {"product_quantity":"3"}. The only parameter accepted will be product_quantity
+* PATCH : Update a cart item. Call http://127.0.0.1:8000/update-item/1 . Json values posted {"product_quantity":"3"}. The only parameter accepted will be product_quantity
 
-* DELETE : Delete the first cart item. Call http://127.0.0.1:8000/update-item/1
+* DELETE : Delete the cart item having a specific Id. Call http://127.0.0.1:8000/update-item/1
 
 In the above examples for PATH and DELETE the id 1 was used (update-item/1). It is better to execute a GET to extract the available Ids. Before executing a PATH and DELETE. The id must exists in the list displayed in the GET output.
 Also HTTP status is change depending of the process result.
 
-All the relevent code is in the file api_app.views.py
+All the relevent code is in the file shopping_cart/api_app/views.py
 
 PS: Depending of your development environment the port could be different. Also the address 127.0.0.1 is assuming that you are executing this Python project locally on your computer.
 
