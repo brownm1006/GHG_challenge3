@@ -8,34 +8,16 @@ This repository containt a Python project needed to validate minimal knowledge o
 
 ## Requirement
 
-### Challenge3: Observation Management
+### Challenge3: Observation Management ( What was implemented from the original requirement)
 
-This challenge is very close to what your first mission will look like working at GHGSat. This is thus a very good way for us to assess your skills, and for you to understand the basics of our business. We're looking for your ability to:
+ - understand and leverage frameworks (like Django, Flask), understand architectures (like REST) for Python
 
- - understand and leverage frameworks (like Django, Flask), libraries (that work with GIS data) and architectures (like REST)
- - create simple and clear solutions to complex problems
- - write maintainable code that others can understand and use
-
-
-Write a web API (no frontend) in Python3 and Django2+ or Flask and [PostGIS](https://postgis.net/) allowing a user to:
-
- 1. Target: create targets given some co-ordinates (lat/long/elevation) and a name
- 2. Observation: create observations of a target given an image file and a timestamp of when the image was captured. You are free to use whatever image and format you want here as a placeholder
- 3. Search 1: find all the targets within a given bounding box (co-ordinates for the four corners of a box) and return a list of them
- 4. Search 2: find all the observations within a bounding box AND within a specific period of time and return a list of them
- 5. Visualization: For search 1 and 2, provide a way to visualize the results, for example generate a KML file suitable for viewing in Google Earth or a page with google maps and an overlay
+ - Install PostGIS on PostgreSQL and read the document of PostGIS. 
  
- Please use JSON as the input and output format for all your endpoints
-
-In addition provide the following:
-
- 1. Documentation for how the internals of the system work, how a user would interact with it and how to run it (English or French)
- 2. Tests for the API
- 3. A Docker container (or docker-compose.yml) that can run the application
 
 ## Features
 
-Since the owner did not have enougth time to implement the PostGis Rest API requerements. The following Api call were created as a way to apply lessons learned regarding Python understanding. The following is the available API:
+Since the owner did not have enougth time to implement the PostGis Rest API requerements. The following Api call were created as a way to apply lessons learned regarding Python understanding ([Base on Naazneen Jatu document](https://stackabuse.com/creating-a-rest-api-in-python-with-django)). The following is the available API:
 
 * GET : Get the content of the shopping cart in Json. Call http://127.0.0.1:8000/cart-items/
 
