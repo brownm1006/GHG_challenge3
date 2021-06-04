@@ -30,7 +30,7 @@ Since the owner did not have enougth time to implement the PostGis Rest API requ
 In the above examples for PATH and DELETE the id 1 was used (update-item/1). It is better to execute a GET to extract the available Ids. Before executing a PATH and DELETE. The id must exists in the list displayed in the GET output.
 Also HTTP status is change depending of the process result.
 
-All the relevent code is in the file shopping_cart/api_app/views.py
+All the relevent code is in the file [shopping_cart/api_app/views.py](https://github.com/brownm1006/GHG_challenge3/blob/main/shopping_cart/api_app/views.py)
 
 PS: Depending of your development environment the port could be different. Also the address 127.0.0.1 is assuming that you are executing this Python project locally on your computer.
 
